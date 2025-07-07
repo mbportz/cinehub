@@ -30,6 +30,7 @@ const Search = () => {
 
       return () => clearTimeout(timeoutId);
    }, [searchQuery]);
+   //test
 
    return (
       <View className="flex-1 bg-primary">
