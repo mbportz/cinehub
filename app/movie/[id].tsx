@@ -67,10 +67,12 @@ const Details = () => {
                <Text className="text-white font-bold text-xl">
                   {movie?.title}
                </Text>
+
                <View className="flex-row items-center gap-x-1 mt-2">
                   <Text className="text-light-200 text-sm">
                      {movie?.release_date?.split("-")[0]} •
                   </Text>
+
                   <Text className="text-light-200 text-sm">
                      {movie?.runtime}m
                   </Text>
@@ -89,6 +91,7 @@ const Details = () => {
                </View>
 
                <MovieInfo label="Overview" value={movie?.overview} />
+
                <MovieInfo
                   label="Genres"
                   value={movie?.genres?.map((g) => g.name).join(" • ") || "N/A"}
@@ -99,6 +102,7 @@ const Details = () => {
                      label="Budget"
                      value={`$${(movie?.budget ?? 0) / 1_000_000} million`}
                   />
+
                   <MovieInfo
                      label="Revenue"
                      value={`$${Math.round(
@@ -127,6 +131,7 @@ const Details = () => {
                className="size-5 mr-1 mt-0.5 rotate-180"
                tintColor="#fff"
             />
+
             <Text className="text-white font-semibold text-base">Go Back</Text>
          </TouchableOpacity>
       </View>
