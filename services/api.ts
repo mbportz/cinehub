@@ -40,7 +40,6 @@ export const fetchMovieDetails = async (
          }
       );
 
-<<<<<<< HEAD
       if (!response.ok) {
          throw new Error(
             `Failed to fetch movie details: ${response.statusText}`
@@ -51,15 +50,6 @@ export const fetchMovieDetails = async (
       return data;
    } catch (error) {
       console.error("Error fetching movie details:", error);
-=======
-      if (!response.ok) throw new Error("Failed to fetch movie detail");
-
-      const data = await response.json();
-
-      return data;
-   } catch (error) {
-      console.warn(error);
->>>>>>> b2c5b269e5a8f28f079938623ea78cd602a57225
       throw error;
    }
 };
