@@ -7,8 +7,7 @@ export default function RootLayout() {
       <>
          <StatusBar hidden={true} />
 
-         <Stack initialRouteName="(tabs)">
-            StatusBar
+         <Stack initialRouteName="(tabs)" screenOptions={{ headerShown: false}}>
             <Stack.Screen
                name="(tabs)"
                options={{
