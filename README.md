@@ -54,9 +54,9 @@ A modern, full-featured **movie app** built with **Expo** and **React Native**. 
 
 👉 **Coming Soon:** Add your live preview link here
 
-### 📸 Screenshots
+### 📸 sample
 
-![App Screenshot](path/to/your/screenshot.png)
+![App Screenshot](assets/cinehub.gif)
 
 ---
 
